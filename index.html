@@ -500,14 +500,27 @@
               </label>
             </div>
             <label class="modal-form-agreement">
-              <input type="checkbox" name="agreement-checkbox" />
+              <input
+                class="modal-agrmnt-checkbox"
+                hidden
+                type="checkbox"
+                name="agreement-checkbox"
+              />
+              <svg class="modal-agrmnt-icon" width="16" height="15">
+                <use
+                  class="agrmnt-icon-checked"
+                  href="./images/icons_svg/sprite.svg#icon-check-ticked"
+                ></use>
+                <use
+                  class="agrmnt-icon-unchecked"
+                  href="./images/icons_svg/sprite.svg#icon-check-empty"
+                ></use>
+              </svg>
               <span class="modal-agreement-label">
-                <svg width="20" height="20">
-                  <use href="./images/icons_svg/sprite.svg#"></use>
-                  <use href="./images/icons_svg/sprite.svg#"></use>
-                </svg>
                 Погоджуюся з розсилкою та приймаю
-                <a href="">Умови договору</a>
+                <a class="modal-agreement-conditions-link" href=""
+                  >Умови договору</a
+                >
               </span>
             </label>
             <button class="modal-form-btn" type="submit">Відправити</button>

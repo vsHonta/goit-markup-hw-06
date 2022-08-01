@@ -853,6 +853,7 @@ img{
     background: #FFFFFF;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
 
     transition: border-color var(--anim-fast) var(--timing-function);
 }
@@ -894,17 +895,27 @@ img{
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
+
+    transition: border-color var(--anim-fast) var(--timing-function);
+}
+
+.modal-form-txtarea:hover{
+    border-color: var(--special-txt-cl);
 }
 
 .modal-form-agreement{ 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
 .modal-form-btn{
     display: inline-flex;
     padding: 10px 52px;
-    margin-bottom: 40px;
     border: 0;
 
     
@@ -919,32 +930,48 @@ img{
     background: var(--special-txt-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    transition: background-color var(--anim-fast) var(--timing-function);
 }
 
 .modal-form-btn:hover{
     background-color: #188CE8
 }
 
+.modal-agrmnt-checkbox:checked + .modal-agrmnt-icon .agrmnt-icon-unchecked{
+    opacity: 0;
+    transition: opacity var(--anim-fast) var(--timing-function);
+}
 
+.agrmnt-icon-checked{
+    fill: green;
+    background-color: #2196F3;
+    opacity: 0;
+    transition: opacity var(--anim-fast) var(--timing-function);
+}
 
-/* 
-.modal-form-group{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 28px;
+.modal-agrmnt-checkbox:checked+.modal-agrmnt-icon .agrmnt-icon-checked {
+    opacity: 1;
+}
+
+.modal-agreement-label{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    user-select: none;
+}
+
+.modal-agreement-conditions-link{
+    color: var(--special-txt-cl);
+    text-decoration: underline;
 }
 
 
-.modal-form-wrap{
-    position: relative;
-}
 
-.modal-form-label{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate();
-} */
+
 
 
 
